@@ -64,11 +64,11 @@ function inductionMatrix.writeInfo(matrix)
     end
 
     matrix.powerStorageWindow.clear()
-    matrix.powerStorageWindow.setCursorPos(40-storedRfSize, 1)
+    matrix.powerStorageWindow.setCursorPos(40-#storedRfString, 1)
     matrix.powerStorageWindow.write(storedRfString)
 
     matrix.powerThroughputWindow.clear()
-    matrix.powerThroughputWindow.setCursorPos(40-rfThroughputSize, 1)
+    matrix.powerThroughputWindow.setCursorPos(40-#rfThroughputString, 1)
     matrix.powerThroughputWindow.write(rfThroughputString)
 
 end
