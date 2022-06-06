@@ -50,7 +50,7 @@ function inductionMatrix.writeInfo(matrix)
     local lastRfInput = matrix.matrix.getLastInput()/2.5
     local lastRfOutput = matrix.matrix.getLastOutput()/2.5
 
-    local rfThroughputString = common.formatNumber(matrix.abs(lastRfInput - lastRfOutput))
+    local rfThroughputString = common.formatNumber(math.abs(lastRfInput - lastRfOutput))
 
     if lastRfInput == lastRfOutput then
         rfThroughputString = '0'
