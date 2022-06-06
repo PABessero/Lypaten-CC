@@ -21,4 +21,4 @@ local mainWindow = window.create(monitorWindow, 16, 1, mainMonitor.width-16, mai
 mainWindow.setCursorPos(1, 1)
 
 
-mekanism.setup(config.matrixList, mainMonitor.monitor)
+mekanism.setup(config.matrixList, mainWindow)
