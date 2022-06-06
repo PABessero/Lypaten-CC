@@ -63,12 +63,16 @@ function inductionMatrix.writeInfo(matrix)
         matrix.powerThroughputWindow.setTextColor(colors.green)
     end
 
+    local width, height = matrix.powerStorageWindow.getSize()
+
     matrix.powerStorageWindow.clear()
-    matrix.powerStorageWindow.setCursorPos(40-#storedRfString, 1)
+    matrix.powerStorageWindow.setCursorPos(width-#storedRfString, 1)
     matrix.powerStorageWindow.write(storedRfString)
 
+    width, height = matrix.powerThroughputWindow.getSize()
+
     matrix.powerThroughputWindow.clear()
-    matrix.powerThroughputWindow.setCursorPos(40-#rfThroughputString, 1)
+    matrix.powerThroughputWindow.setCursorPos(width-#rfThroughputString, 1)
     matrix.powerThroughputWindow.write(rfThroughputString)
 
 end
