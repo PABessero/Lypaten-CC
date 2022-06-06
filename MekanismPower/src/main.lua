@@ -16,10 +16,10 @@ monitorWindow.setPaletteColor(colors.red, 25, 25, 25)
 
 --local configWindow = window.create(monitorWindow, config.configWindow.width, 1, mainMonitor.width-config.configWindow.width, mainMonitor.height)
 
-local oldTerm = term.redirect(monitorWindow)
-    paintutils.drawLine(config.configWindow.width+2,1,config.configWindow.width+2,mainMonitor.height,colors.red)
-    monitorWindow.setBackgroundColor(colors.black)
-term.redirect(oldTerm)
+--local oldTerm = term.redirect(monitorWindow)
+--    paintutils.drawLine(config.configWindow.width+2,1,config.configWindow.width+2,mainMonitor.height,colors.red)
+--    monitorWindow.setBackgroundColor(colors.black)
+--term.redirect(oldTerm)
 
 local mainWindow = window.create(monitorWindow, 16, 1, mainMonitor.width-16, mainMonitor.height)
 mainWindow.setCursorPos(1, 1)
