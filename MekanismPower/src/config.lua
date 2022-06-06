@@ -11,6 +11,10 @@ config.matrixList = {
     }
 }
 
+config.configWindow = {
+    width = 13
+}
+
 config.mainMonitor = {
     code = 'monitor_2'
 }
