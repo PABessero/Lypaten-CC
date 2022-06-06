@@ -22,3 +22,8 @@ mainWindow.setCursorPos(1, 1)
 
 
 mekanism.setup(config.matrixList, mainWindow)
+
+while true do
+    mekanism.mainLoop(config.matrixList)
+    sleep(5)
+end
