@@ -11,6 +11,8 @@ local monitorWindow = window.create(mainMonitor, 1, 1, mainMonitor.width, mainMo
 monitorWindow.setBackgroundColor(colors.black)
 monitorWindow.clear()
 
+monitorWindow.setPaletteColor(colors.red, 25, 25, 25)
+
 
 --local configWindow = window.create(monitorWindow, config.configWindow.width, 1, mainMonitor.width-config.configWindow.width, mainMonitor.height)
 
