@@ -8,10 +8,7 @@ mainMonitor.width, mainMonitor.height = mainMonitor.monitor.getSize()
 mainMonitor.monitor.clear()
 
 local monitorWindow = window.create(mainMonitor, 1, 1, mainMonitor.width, mainMonitor.height)
-monitorWindow.setBackgroundColor(colors.black)
-monitorWindow.clear()
 
-monitorWindow.setPaletteColor(colors.red, 25, 25, 25)
 
 
 --local configWindow = window.create(monitorWindow, config.configWindow.width, 1, mainMonitor.width-config.configWindow.width, mainMonitor.height)
@@ -25,4 +22,4 @@ local mainWindow = window.create(monitorWindow, 16, 1, mainMonitor.width-16, mai
 mainWindow.setCursorPos(1, 1)
 
 
-mekanism.setup(config.matrixList, mainWindow)
+mekanism.setup(config.matrixList, mainMonitor)
