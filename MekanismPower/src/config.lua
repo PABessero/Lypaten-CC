@@ -3,11 +3,11 @@ config = {}
 
 config.matrixList = {
     {
-        matrixCode = 'inductionPort_3',
+        matrixCode = 'inductionPort_4',
         name = 'Main Power Storage',
-        monitor = {
-            monitorCode = 'monitor_3'
-        }
+        --monitor = {
+        --    monitorCode = 'monitor_3'
+        --}
     }
 }
 

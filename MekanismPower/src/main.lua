@@ -25,5 +25,5 @@ mekanism.setup(config.matrixList, mainWindow)
 
 while true do
     mekanism.mainLoop(config.matrixList)
-    sleep(5)
+    sleep(0.1)
 end
